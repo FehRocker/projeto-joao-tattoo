@@ -1,0 +1,78 @@
+.container {
+    border: 1px solid red;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'cabecalho cabecalho'
+        'quem-somos fotos-ambiente';
+}
+
+body {
+    background: url(img/background.jpg);
+}
+
+header {
+    border: 1px solid red;
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+section#quem-somos {
+    border: 1px solid red;
+    grid-area: quem-somos;
+    
+}
+
+
+section#fotos-ambiente {
+    grid-area: fotos-ambiente;
+    border: 1px solid red;
+    justify-content: end;
+}
+
+/* section#fotos-ambiente>img {
+    max-width: 100%;
+} */
+
+
+#img-logo {
+    padding-right: 700px;
+    width: 100px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul a {
+    padding: 0.4rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+nav ul a:hover {
+    background-color: red;
+}
+
+
+/*Formatação de texto*/
+
+h1,p {
+    color: white;
+}
+
+section#quem-somos h1 {
+    font-size: 3rem;
+    text-align: center;
+       
+}
