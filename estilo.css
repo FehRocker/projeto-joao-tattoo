@@ -1,48 +1,75 @@
 .container {
-    border: 1px solid red;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         'cabecalho cabecalho'
-        'quem-somos fotos-ambiente';
+        'quem-somos fotos-ambiente'
+        'titulo_portifolio titulo_portifolio'
+        'portifolio portifolio'
+        'rodape rodape';
 }
 
 body {
-    background: url(img/background.jpg);
+    background: url(img/foto-fundo.jpg);
 }
 
 header {
-    border: 1px solid red;
+    border: 4px solid rgba(0, 255, 255, 0.396);
     grid-area: cabecalho;
     display: flex;
     align-items: center;
     padding: 0px 0px;
+    background:  url(img/foto-cabecalho.jpg) ;
+}
+
+footer {
+    border: 4px solid rgba(0, 255, 255, 0.396);
+    grid-area: rodape;
+    display: flex;
+    align-items: center;
 }
 
 section#quem-somos {
-    border: 1px solid red;
+    border: 4px solid rgba(0, 255, 255, 0.396);
     grid-area: quem-somos;
-    
+
+
 }
 
 
 section#fotos-ambiente {
     grid-area: fotos-ambiente;
-    border: 1px solid red;
+    border: 4px solid rgba(0, 255, 255, 0.396);
     justify-content: end;
 }
 
-/* section#fotos-ambiente>img {
-    max-width: 100%;
-} */
+section#contato {
+    grid-area: cont0ato;
+    margin: 20px 610px 20px 50px;
+    background-color: rgba(0, 255, 255, 0.396);
 
+}
+
+section#orcamento {
+    grid-area: orcamento;
+    padding: 1rem;
+    background-color: rgba(0, 255, 255, 0.396);
+    margin: 20px;
+
+}
 
 #img-logo {
     padding-right: 700px;
     width: 100px;
 }
+
+
+.form-control {
+    margin: 0.4rem;
+}
+
 
 
 nav ul {
@@ -53,26 +80,70 @@ nav ul {
 
 nav ul a {
     padding: 0.4rem;
-    margin: 0.5rem;
+    margin: 0.2rem;
     text-decoration: none;
-    color: white;
-    border: 1px solid red;
+    color: black;
+    border: 1px solid rgb(24, 129, 221);
     border-radius: 15px;
+    background-color: rgba(0, 255, 255, 0.396);
 }
 
 nav ul a:hover {
-    background-color: red;
+    background-color: rgb(26, 122, 173);
+}
+
+.portifolio {
+    grid-area: portifolio;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 380px 380px 380px 380px;
+    row-gap: 20px;
+    column-gap: 120px;
+    padding: 0 20px;
+}
+
+#button-portifolio {
+    margin-left: 10rem;
+    padding: 0.8rem 4rem;
+    border-radius: 2rem;
+    background-color:  rgba(0, 255, 255, 0.396);
+
+}
+
+#button-portifolio:hover {
+    background-color: rgb(26, 122, 173);
+    
+}
+
+
+
+.portifolio>div {
+    border: 4px dotted green;
+
+}
+
+.portifolio>div>img {
+    width: 200px;
+    height: 380px;
+
 }
 
 
 /*Formatação de texto*/
 
-h1,p {
+h1, h2, h3, p {
     color: white;
 }
 
 section#quem-somos h1 {
     font-size: 3rem;
     text-align: center;
-       
 }
+.titulo_portifolio{
+    grid-area: titulo_portifolio;
+    text-align: center;
+}
+
+
+
+
