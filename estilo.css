@@ -4,24 +4,61 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        'cabecalho cabecalho'
-        'quem-somos fotos-ambiente'
-        'titulo_portifolio titulo_portifolio'
-        'portifolio portifolio'
-        'rodape rodape';
+    'cabecalho cabecalho'
+    'quem-somos fotos-ambiente'
+    'titulo_portifolio titulo_portifolio'
+    'portifolio portifolio'
+    'rodape rodape';
 }
 
 body {
+    margin: 0;
     background: url(img/foto-fundo.jpg);
 }
 
 header {
     border: 4px solid rgba(0, 255, 255, 0.396);
+    border-bottom: 0px;
     grid-area: cabecalho;
     display: flex;
     align-items: center;
-    padding: 0px 0px;
-    background:  url(img/foto-cabecalho.jpg) ;
+    background:  url(img/foto-cabecalho2.jpg);
+    background-position:center ;
+
+}
+
+#img-logo {
+    width: 150px;
+    height: 120px;
+   
+}
+
+.nav_header ul{
+    padding-left: 45rem;
+    
+
+}
+
+
+section#quem-somos {
+    border: 4px solid rgba(0, 255, 255, 0.396);
+    grid-area: quem-somos;
+    
+    
+}
+
+
+section#fotos-ambiente {
+    grid-area: fotos-ambiente;
+    border: 4px solid rgba(0, 255, 255, 0.396);    
+
+}
+
+section#contato {
+    grid-area: contato;
+    margin: 20px 610px 20px 50px;
+    background-color: rgba(0, 255, 255, 0.396);
+    
 }
 
 footer {
@@ -31,39 +68,14 @@ footer {
     align-items: center;
 }
 
-section#quem-somos {
-    border: 4px solid rgba(0, 255, 255, 0.396);
-    grid-area: quem-somos;
-
-
-}
-
-
-section#fotos-ambiente {
-    grid-area: fotos-ambiente;
-    border: 4px solid rgba(0, 255, 255, 0.396);
-    justify-content: end;
-}
-
-section#contato {
-    grid-area: cont0ato;
-    margin: 20px 610px 20px 50px;
-    background-color: rgba(0, 255, 255, 0.396);
-
-}
-
 section#orcamento {
     grid-area: orcamento;
     padding: 1rem;
     background-color: rgba(0, 255, 255, 0.396);
     margin: 20px;
-
+    
 }
 
-#img-logo {
-    padding-right: 700px;
-    width: 100px;
-}
 
 
 .form-control {
@@ -131,14 +143,28 @@ nav ul a:hover {
 
 /*Formatação de texto*/
 
+
 h1, h2, h3, p {
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+p{
+    text-indent: 40px;
+    text-align: left;
+    font-size: 1.2rem
 }
 
 section#quem-somos h1 {
     font-size: 3rem;
     text-align: center;
 }
+
+section#contato h2{
+    text-align: center;
+}
+
 .titulo_portifolio{
     grid-area: titulo_portifolio;
     text-align: center;
