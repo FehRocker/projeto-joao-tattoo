@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JP Tattoo</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo/estilo.css">
 </head>
 
 <body>
@@ -33,35 +33,72 @@
                 Seja para sua primeira tatuagem ou para expandir sua coleção, estarei aqui para tornar sua experiência
                 única e especial.</p>
 
-               <a href="portifolio.html"> <button id="button-portifolio">Portifólio</button></a>
-            </section>
-            <section id="fotos-ambiente">
-                <img class="fotos-ambiente" src="img/ambiente.jpg" alt="fotos-ambiente">
-            </section>
-        
-            <footer>
-                <section id="contato">
-                    <h2>Contato</h2>
-                    <h3>Telefone:  </h3>
-                    <h3>(11) xxxxx-xxxx</h3> 
-                    <h3>E-mail: </h3>
-                    <h3>JoaoPedro@tattoo.com.br</h3> 
-                </section>
+            <a href="portifolio.html"> <button id="button-portifolio">Portifólio</button></a>
+        </section>
 
-                <section id="orcamento">
-                    <form action="">
-                        <h2>Orçamentos</h2>
-                        <input type="text" placeholder="Seu Nome" class="form-control"><br>
-                        <input type="text" placeholder="Seu Contato" class="form-control"> <br>
-                        <button class="form-control">Fazer Orçamento</button>
-    
-                    </form>
-                 
-                </section>
-            </footer>
+        <section id="fotos-ambiente">
+
+            <div class="slides">
+                <!-- radio buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- fim radio buttons-->
+            <div class="slide-first">
+                <img src="img/ambiente.jpg" alt="fotos-ambiente">
+            </div>
+            <div class="slide">
+                <img src="img/ambiente2.webp" alt="fotos-ambiente">
+            </div>
+            <div class="slide">
+                <img src="img//ambiente3.jpg" alt="fotos-ambiente">
+            </div>
+            <div class="slide">
+                <img src="img/ambiente4.webp" alt="fotos-ambiente">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </section>
+        
+       
+
+
+        <footer>
+            <section id="contato">
+                <h2>Contato</h2>
+                <h3>Telefone: </h3>
+                <h3>(11) xxxxx-xxxx</h3>
+                <h3>E-mail: </h3>
+                <h3>JoaoPedro@tattoo.com.br</h3>
+            </section>
+
+            <section id="orcamento">
+                <form action="">
+                    <h2>Orçamentos</h2>
+                    <input type="text" placeholder="Seu Nome" class="form-control"><br>
+                    <input type="text" placeholder="Seu Contato" class="form-control"> <br>
+                    <button class="form-control">Fazer Orçamento</button>
+
+                </form>
+
+            </section>
+        </footer>
     </div> <!--fim container-->
 
-
+    <script src="script/script-index.js"></script>
 </body>
 
 </html>
