@@ -7,29 +7,32 @@
     <title>portifolio Jp Tattoo</title>
     <link rel="stylesheet" href="estilo/estilo.css">
     <link rel="stylesheet" href="estilo/portifolio.css">
+    <script src="https://kit.fontawesome.com/be4887a8fd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <a href="#">
+            <a href="index.html">
                 <img id="img-logo" src="img/Logo JP SVG.svg" alt="logo-Jp">
             </a>
 
             <nav class="nav_header">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="index.html">Quem somos</a></li>
                     <li><a href="portifolio.html">Portifólio</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a  href="https://wa.me/5511963626713?text= Olá João, gostaria de um orçamento para minha tattoo"
+                        target="_blank">Contato</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="titulo_portifolio">
+
             <h1>Portifólio</h1>
         </div>
-        <section class="portifolio">
+        <section class="portifolio-img">
             <div><img src="img/imagem1.webp" alt="imagem1"></div>
             <div><img src="img/imagem2.jpg" alt="imagem2"></div>
             <div><img src="img/imagem3.png" alt="imagem3"></div>
@@ -39,7 +42,49 @@
             <div><img src="img/imagem7.4ced2e5c-df09-4575-91cb-497aa8561f2a" alt="imagem7"></div>
             <div><img src="img/imagem8.avif" alt="imagem8"></div>
 
+
+            <div class="videos-portifolio">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+
+                    <div class="video-first">
+                        <video height="600px" autoplay muted loop>
+                            <source src="video/video1.mp4">
+                        </video>
+                    </div>
+
+                    <div class="video">
+                        <video height="600px" autoplay muted loop>
+                             <source src="video/video2.mp4">
+                        </video>
+                    </div>
+
+                    <div class="video">
+                        <video height="600px" autoplay muted loop>
+                             <source  src="video/video3.mp4">
+                        </video>
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                </div>
+
+            </div>
+
+
         </section>
+
 
 
 
@@ -47,8 +92,27 @@
         <footer>
             <section id="contato">
                 <h2>Contato</h2>
-                <h3>Telefone <span>(11) xxxxx-xxxx</span> </h3>
-                <h3>E-mail <span>JoaoPedro@tattoo.com.br</span> </h3>
+                <h3>Telefone: </h3>
+                <h3>(11) 96362-6713</h3>
+                <h3>E-mail: </h3>
+                <h3>JoaoPedro@tattoo.com.br</h3>
+            </section>
+
+            <section id="icons">
+                <h1>Redes Sociais</h1>
+                <a href="https://www.instagram.com/jpart.tattoo/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl" title="Follow-up to Instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100085702833300&mibextid=wwXIfr&rdid=05FmYiBCJs53xHNh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ABg1TasNe%2F%3Fmibextid%3DwwXIfr#"
+                    target="_blank">
+                    <i class="fa-brands fa-square-facebook fa-2xl" title="Follow-up to Facebook"></i>
+                </a>
+
+                <a href="https://web.whatsapp.com/sendf?phone=5511963626713" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-2xl" title="Contact Whatsapp"></i>
+                </a>
+
             </section>
 
             <section id="orcamento">
@@ -64,6 +128,7 @@
         </footer>
 
     </div>
+    <script src="script/script-portifolio.js"></script>
 </body>
 
 </html>

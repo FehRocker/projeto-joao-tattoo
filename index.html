@@ -7,21 +7,23 @@
     <title>JP Tattoo</title>
     <link rel="stylesheet" href="estilo/estilo.css">
     <script src="https://kit.fontawesome.com/be4887a8fd.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
     <div class="container"><!--inicio container-->
         <header>
-            <a href="#">
+            <a href="index.html">
                 <img id="img-logo" src="img/Logo JP SVG.svg" alt="logo-Jp">
             </a>
 
             <nav class="nav_header">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#quem-somos">Quem somos</a></li>
                     <li><a href="portifolio.html">Portifólio</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a  href="https://wa.me/5511963626713?text= Olá João, gostaria de um orçamento para minha tattoo"
+                        target="_blank">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -72,6 +74,7 @@
                     <label for="radio3" class="manual-btn"></label>
                     <label for="radio4" class="manual-btn"></label>
                 </div>
+            </div>
         </section>
 
 
@@ -91,25 +94,27 @@
                 </a>
 
                 <a href="https://www.facebook.com/profile.php?id=100085702833300&mibextid=wwXIfr&rdid=05FmYiBCJs53xHNh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ABg1TasNe%2F%3Fmibextid%3DwwXIfr#"
-                target="_blank">
+                    target="_blank">
                     <i class="fa-brands fa-square-facebook fa-2xl" title="Follow-up to Facebook"></i>
                 </a>
 
-                <a href="https://web.whatsapp.com/sendf?phone=5511963626713" target="_blank">
+                <a id="wpp"
+                    href="https://wa.me/5511963626713?text= Olá João, gostaria de um orçamento para minha tattoo"
+                    target="_blank">
                     <i class="fa-brands fa-whatsapp fa-2xl" title="Contact Whatsapp"></i>
                 </a>
 
             </section>
 
             <section id="orcamento">
-                <form action="">
+                <form id="form-orcamento" class="input-box" action="">
                     <h2>Orçamentos</h2>
-                    <input type="text" placeholder="Seu Nome" class="form-control"><br>
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome" class="form-control"><br>
+                    <span class="error"></span>
                     <input type="text" placeholder="Seu Contato" class="form-control"> <br>
+
                     <button class="form-control">Fazer Orçamento</button>
-
                 </form>
-
             </section>
         </footer>
     </div> <!--fim container-->

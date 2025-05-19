@@ -1,6 +1,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.392);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -17,13 +18,14 @@ body {
 }
 
 header {
-    border: 4px solid rgba(0, 255, 255, 0.396);
+    border: 4px solid rgba(0, 255, 255, 0.132);
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.392);
     border-bottom: 0px;
     grid-area: cabecalho;
     display: flex;
     align-items: center;
     background:  url(../img/foto-cabecalho2.jpg);
-    background-position:center ;
+    background-position:center;
 
 }
 
@@ -40,7 +42,8 @@ header {
 
 
 section#quem-somos {
-    border: 4px solid rgba(0, 255, 255, 0.396);
+    border: 4px solid rgba(0, 255, 255, 0.132);
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.392);
     grid-area: quem-somos;
     
 }
@@ -48,7 +51,8 @@ section#quem-somos {
 
 section#fotos-ambiente {
     grid-area: fotos-ambiente;
-    border: 4px solid rgba(0, 255, 255, 0.396);    
+    border: 4px solid rgba(0, 255, 255, 0.132);  
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.392); 
     margin: 0 auto;
     width: 600px;
     height: 500px;
@@ -158,16 +162,18 @@ section#fotos-ambiente img{
 
 
 footer {
-    border: 4px solid rgba(0, 255, 255, 0.396);
+    border: 4px solid rgba(0, 255, 255, 0.132);
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.392);
     grid-area: rodape;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 section#contato {
     grid-area: contato;
     margin: 20px 250px 20px 50px;
-    background-color: rgba(0, 255, 255, 0.396);
+    background-color: rgba(0, 255, 255, 0.11);
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.392);
     
 }
 
@@ -189,7 +195,8 @@ section#icons a{
 section#orcamento {
     grid-area: orcamento;
     padding: 1rem;
-    background-color: rgba(0, 255, 255, 0.396);
+    background-color: rgba(0, 255, 255, 0.11);
+    box-shadow: 10px 5px 5px rgba(0, 255, 255, 0.392);
     margin: 20px;
     
 }
@@ -237,7 +244,11 @@ nav ul a:hover {
     
 }
 
-
+.error{
+    color: red;
+    font-size: 10px;
+    max-width: 200px;
+}
 
 
 
